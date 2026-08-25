@@ -142,3 +142,21 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
+//basics of github commandes we need to know
+//git status
+// git add .
+// git commit -m "Initial commit"
+// git branch -M main
+// git push -u origin main
+
+//now lets start the object distructuring
+const book = getbook(1);
+const { title, author, publicationDate, pages, genres } = book;
+//console.log(genres);
+
+const [genersOne , genersTwo] = generes;
+// console.log(genersOne, genersTwo);
+
+//the idea is accessing in distruction the nested objct 
+
