@@ -150,13 +150,37 @@ function getBook(id) {
 // git branch -M main
 // git push -u origin main
 
-//now lets start the object distructuring
-const book = getbook(1);
-const { title, author, publicationDate, pages, genres } = book;
-//console.log(genres);
+//now lets start the object destructuring
+ 
+// const x = getBook(1);
+// // console.log(x)
+// const {title:a,publicationDate:b} = x;
+// a;
+// b;
 
-const [genersOne , genersTwo] = generes;
-// console.log(genersOne, genersTwo);
 
-//the idea is accessing in distruction the nested objct 
 
+
+
+//array destructuring
+// const {title,publicationDate,author,genres} = x;
+// genres;
+// const [first,second] = genres;
+// console.log(first,second);
+
+
+//restspread operator
+
+// const {title,...rest} = x;
+// console.log(rest);
+// const { genres }= x;
+// const {first ,...others} = genres;
+// console.log(first,others);
+
+
+//template literals
+//this is adding different data types like string and numbers and also js variables in a string using backticks and ${} syntax
+// const y = getBook(2);
+// const { title, publicationDate, author, pages } = y;
+// const bookOne = "this book one title is ${title} and it was published on ${publicationDate} by the auther of ${author} and it has ${pages} pages";
+// console.log(bookOne);
